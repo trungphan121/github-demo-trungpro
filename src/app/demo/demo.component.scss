@@ -1,0 +1,46 @@
+h2 {
+    background: #ccc;
+    padding: 5px 10px;
+}
+
+input {
+    margin-bottom: 20px;
+    width: 100%;
+    padding: 5px 10px;
+    font-size: 15px;
+}
+
+button {
+    background: green;
+    border: 1px solid green;
+    color: white;
+    padding: 5px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #fff;
+    color: black;
+    border: 3px solid green;
+}
+
+table, tr {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+}
+
+tr, td, th {
+    padding:15px;
+}
+
+th, td {
+    text-align: left;
+}
+
+th {
+    background: #2d2b2b;
+    color: white;
+}

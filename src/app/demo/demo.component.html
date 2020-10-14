@@ -1,0 +1,28 @@
+<h2>Quản lý sản phẩm</h2>
+<form action="">
+    <label for="maSP">Product code</label><br>
+    <input type="text" [(ngModel)]="code" name="code" id="code"><br>
+    <label for="tenSP">Product name</label><br>
+    <input type="text" [(ngModel)]="name" name="name" id="name"><br>
+    <label for="gia">Price</label><br>
+    <input type="number" [(ngModel)]="price" name="price" id="price"><br>
+    <button (click)="add()">Add product</button>
+</form>
+<hr>
+
+<div>
+    <table >
+        <tr>
+            <th>No</th>
+            <th>Product Code</th>
+            <th>Product Name</th>
+            <th>Price</th>
+        </tr>
+        <tr *ngFor='let item of list; let no = index '>
+            <td>{{no + 1}}</td>
+            <td>{{item.code}}</td>
+            <td>{{item.name}}</td>
+            <td>{{item.price}}</td>
+        </tr>
+    </table>
+</div>
